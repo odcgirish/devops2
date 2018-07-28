@@ -12,6 +12,19 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.8.RELEASE</version>
     </parent>
+    <distributionManagement>
+  <repository>
+    <id>nexus</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://localhost:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>nexus</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://localhost:8081/repository/maven-snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
+    
 
     <dependencies>
         <dependency>
